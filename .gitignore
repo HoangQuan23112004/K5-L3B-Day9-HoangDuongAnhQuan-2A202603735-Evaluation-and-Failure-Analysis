@@ -12,7 +12,10 @@ __pycache__/
 
 # Runtime output. Reports for grading (baseline_v1/v2, eval_fixed, eval_seeded_regression)
 # are committed with: git add -f reports/*.json
-src/reports/
+# Keep generated submission reports visible to git; trap fixtures stay local.
+src/reports/*
+!src/reports/*.json
+!src/reports/baseline_spec_*.yaml
 traces/
 *.sqlite
 *.sqlite-*

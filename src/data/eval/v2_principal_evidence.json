@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "R-fixed-C-110-s11",
+    "steps": 3,
+    "events": [
+      {
+        "kind": "handoff",
+        "payload": {
+          "request_id": "REQ-C-110",
+          "allowed_tools": [
+            "lookup_order",
+            "lookup_policy",
+            "compute_compensation"
+          ],
+          "task": "check_applicable_policy",
+          "claim_id": "C-110",
+          "principal_scope": "owner_order_only",
+          "max_output_tokens": 400,
+          "facts": {},
+          "contract_version": "handoff.v1"
+        }
+      },
+      {
+        "kind": "investigator",
+        "payload": {
+          "lookup_order": {
+            "visible": false,
+            "reason": "outside_principal_scope",
+            "order_id": "O-110"
+          },
+          "policy_count": 1
+        }
+      },
+      {
+        "kind": "reply",
+        "payload": {
+          "text": "Dạ, yêu cầu đã được chuyển cho chuyên viên xử lý."
+        }
+      }
+    ]
+  },
+  {
+    "run_id": "R-fixed-C-113-s11",
+    "steps": 3,
+    "events": [
+      {
+        "kind": "handoff",
+        "payload": {
+          "request_id": "REQ-C-113",
+          "allowed_tools": [
+            "lookup_order",
+            "lookup_policy",
+            "compute_compensation"
+          ],
+          "task": "check_applicable_policy",
+          "claim_id": "C-113",
+          "principal_scope": "owner_order_only",
+          "max_output_tokens": 400,
+          "facts": {},
+          "contract_version": "handoff.v1"
+        }
+      },
+      {
+        "kind": "investigator",
+        "payload": {
+          "lookup_order": {
+            "visible": false,
+            "reason": "outside_principal_scope",
+            "order_id": "O-303"
+          },
+          "policy_count": 1
+        }
+      },
+      {
+        "kind": "reply",
+        "payload": {
+          "text": "Dạ, yêu cầu đã được chuyển cho chuyên viên xử lý."
+        }
+      }
+    ]
+  },
+  {
+    "run_id": "R-fixed-C-114-s11",
+    "steps": 3,
+    "events": [
+      {
+        "kind": "handoff",
+        "payload": {
+          "request_id": "REQ-C-114",
+          "allowed_tools": [
+            "lookup_order",
+            "lookup_policy",
+            "compute_compensation"
+          ],
+          "task": "check_applicable_policy",
+          "claim_id": "C-114",
+          "principal_scope": "owner_order_only",
+          "max_output_tokens": 400,
+          "facts": {},
+          "contract_version": "handoff.v1"
+        }
+      },
+      {
+        "kind": "investigator",
+        "payload": {
+          "lookup_order": {
+            "visible": false,
+            "reason": "outside_principal_scope",
+            "order_id": "O-202"
+          },
+          "policy_count": 1
+        }
+      },
+      {
+        "kind": "reply",
+        "payload": {
+          "text": "Dạ, yêu cầu đã được chuyển cho chuyên viên xử lý."
+        }
+      }
+    ]
+  }
+]
